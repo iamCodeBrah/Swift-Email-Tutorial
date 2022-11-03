@@ -12,6 +12,7 @@
 		42DDAC0E2913F51600A55F5B /* MailComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDAC0D2913F51600A55F5B /* MailComposeController.swift */; };
 		42DDAC132913F51700A55F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DDAC122913F51700A55F5B /* Assets.xcassets */; };
 		42DDAC162913F51700A55F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DDAC142913F51700A55F5B /* LaunchScreen.storyboard */; };
+		42DDAC202913F8EC00A55F5B /* SmtpEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDAC1F2913F8EC00A55F5B /* SmtpEmailController.swift */; };
 		50956A4C28C518A8A876267A /* Pods_Swift_Email_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2948A4D7FB98272E88BD561B /* Pods_Swift_Email_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		42DDAC152913F51700A55F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DDAC172913F51700A55F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DDAC1E2913F79600A55F5B /* MailCore2_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailCore2_bridge.h; sourceTree = "<group>"; };
+		42DDAC1F2913F8EC00A55F5B /* SmtpEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmtpEmailController.swift; sourceTree = "<group>"; };
 		75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				42DDAC0D2913F51600A55F5B /* MailComposeController.swift */,
+				42DDAC1F2913F8EC00A55F5B /* SmtpEmailController.swift */,
 				42DDAC1D2913F52E00A55F5B /* Supporting */,
 				42DDAC172913F51700A55F5B /* Info.plist */,
 				42DDAC1E2913F79600A55F5B /* MailCore2_bridge.h */,
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DDAC202913F8EC00A55F5B /* SmtpEmailController.swift in Sources */,
 				42DDAC0E2913F51600A55F5B /* MailComposeController.swift in Sources */,
 				42DDAC0A2913F51600A55F5B /* AppDelegate.swift in Sources */,
 				42DDAC0C2913F51600A55F5B /* SceneDelegate.swift in Sources */,
