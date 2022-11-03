@@ -24,6 +24,7 @@
 		42DDAC122913F51700A55F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DDAC152913F51700A55F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DDAC172913F51700A55F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DDAC1E2913F79600A55F5B /* MailCore2_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailCore2_bridge.h; sourceTree = "<group>"; };
 		75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +47,6 @@
 				D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */,
 				75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,6 +74,7 @@
 				42DDAC0D2913F51600A55F5B /* MailComposeController.swift */,
 				42DDAC1D2913F52E00A55F5B /* Supporting */,
 				42DDAC172913F51700A55F5B /* Info.plist */,
+				42DDAC1E2913F79600A55F5B /* MailCore2_bridge.h */,
 			);
 			path = "Swift-Email-Tutorial";
 			sourceTree = "<group>";
@@ -339,6 +340,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXHLAG9HB4;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
 				INFOPLIST_FILE = "Swift-Email-Tutorial/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -352,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.codebrah.Swift-Email-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//Swift-Email-Tutorial/MailCore2_bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +375,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXHLAG9HB4;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
 				INFOPLIST_FILE = "Swift-Email-Tutorial/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -380,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.codebrah.Swift-Email-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//Swift-Email-Tutorial/MailCore2_bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
