@@ -1,0 +1,22 @@
+PODS:
+  - mailcore2-ios (0.6.4)
+
+DEPENDENCIES:
+  - mailcore2-ios (from `https://github.com/MailCore/mailcore2.git`, tag `0.6.4`)
+
+EXTERNAL SOURCES:
+  mailcore2-ios:
+    :git: https://github.com/MailCore/mailcore2.git
+    :tag: 0.6.4
+
+CHECKOUT OPTIONS:
+  mailcore2-ios:
+    :git: https://github.com/MailCore/mailcore2.git
+    :tag: 0.6.4
+
+SPEC CHECKSUMS:
+  mailcore2-ios: 71d61040abc1ff9f6822fe2844e9d741da80a731
+
+PODFILE CHECKSUM: e9b1e32d8ed342d24d9a80a6a7a5cb0e66cbe1cd
+
+COCOAPODS: 1.11.3

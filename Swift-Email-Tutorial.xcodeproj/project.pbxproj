@@ -12,9 +12,11 @@
 		42DDAC0E2913F51600A55F5B /* MailComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDAC0D2913F51600A55F5B /* MailComposeController.swift */; };
 		42DDAC132913F51700A55F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DDAC122913F51700A55F5B /* Assets.xcassets */; };
 		42DDAC162913F51700A55F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DDAC142913F51700A55F5B /* LaunchScreen.storyboard */; };
+		50956A4C28C518A8A876267A /* Pods_Swift_Email_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2948A4D7FB98272E88BD561B /* Pods_Swift_Email_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2948A4D7FB98272E88BD561B /* Pods_Swift_Email_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Email_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DDAC062913F51600A55F5B /* Swift-Email-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Email-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DDAC092913F51600A55F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DDAC0B2913F51600A55F5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		42DDAC122913F51700A55F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DDAC152913F51700A55F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DDAC172913F51700A55F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Email-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Email-Tutorial/Pods-Swift-Email-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50956A4C28C518A8A876267A /* Pods_Swift_Email_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39D13B14AB35A2A14D004356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */,
+				75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		42DDABFD2913F51600A55F5B = {
 			isa = PBXGroup;
 			children = (
 				42DDAC082913F51600A55F5B /* Swift-Email-Tutorial */,
 				42DDAC072913F51600A55F5B /* Products */,
+				39D13B14AB35A2A14D004356 /* Pods */,
+				A467D01F74685B11C708E73C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +89,14 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
+		A467D01F74685B11C708E73C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2948A4D7FB98272E88BD561B /* Pods_Swift_Email_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42DDAC1A2913F51700A55F5B /* Build configuration list for PBXNativeTarget "Swift-Email-Tutorial" */;
 			buildPhases = (
+				D1C280A93681DAD1D4B2B05B /* [CP] Check Pods Manifest.lock */,
 				42DDAC022913F51600A55F5B /* Sources */,
 				42DDAC032913F51600A55F5B /* Frameworks */,
 				42DDAC042913F51600A55F5B /* Resources */,
@@ -136,6 +162,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1C280A93681DAD1D4B2B05B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift-Email-Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42DDAC022913F51600A55F5B /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		42DDAC1B2913F51700A55F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9570942400EB817CFC4704D /* Pods-Swift-Email-Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +359,7 @@
 		};
 		42DDAC1C2913F51700A55F5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75CB54994EFB6BF816425ED0 /* Pods-Swift-Email-Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
